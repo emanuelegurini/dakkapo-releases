@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dakkapo: teleprompter Android offline con camera e timeline integrata</title>
+  <meta name="description" content="App Android nativa e offline per registrare video verticali 9:16 con script sincronizzato alla voce sotto la lente, tagliare i silenzi e rigirare ogni errore in timeline.">
+  <meta property="og:title" content="dakkapo: teleprompter Android offline con camera e timeline integrata">
+  <meta property="og:description" content="Registra video 9:16 con script sincronizzato alla voce, taglia gli errori in timeline ed esporta un MP4 pulito senza editor esterni.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/01-hero-dakkapo.png">
+  <link rel="icon" type="image/svg+xml" href="assets/dakkapo-icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="dakkapo home">
+        <img src="assets/dakkapo-mark.svg" alt="" width="28" height="23" class="brand-mark">
+        <span class="brand-name">dakkapo</span>
+      </a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <a href="#funzioni">Funzioni</a>
+        <a href="#specifiche">Specifiche</a>
+        <a href="#aggiornamenti">Aggiornamenti</a>
+        <a href="#installazione">Installa APK</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" data-download-link href="https://github.com/emanuelegurini/dakkapo-releases/releases/tag/v0.2.0" target="_blank" rel="noopener noreferrer">
+        Scarica APK
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="release-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-release-label>Android nativo · Release v0.2.0 · 100% offline</span>
+          </div>
+          <h1>Registra video 9:16 leggendo lo script, taglia gli errori sullo stesso telefono.</h1>
+          <p class="lead">
+            <strong>dakkapo</strong> unisce fotocamera frontale, teleprompter agganciato alla voce e timeline di montaggio in una sola app Android offline: il testo scorre sotto la lente mentre parli, i silenzi si tagliano con un tocco e ogni frase sbagliata si rigira partendo dalla parola esatta del taglio.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-download-link href="https://github.com/emanuelegurini/dakkapo-releases/releases/tag/v0.2.0" target="_blank" rel="noopener noreferrer">
+              <span data-download-text>Scarica APK (v0.2.0)</span>
+            </a>
+            <a class="btn btn-secondary" href="#funzioni">Guarda cosa fa</a>
+          </div>
+          <dl class="hero-meta">
+            <div>
+              <dt>Versione</dt>
+              <dd data-version-value>v0.2.0</dd>
+            </div>
+            <div>
+              <dt>Dimensione APK</dt>
+              <dd data-size-value>101 MB (modello IT incluso)</dd>
+            </div>
+            <div>
+              <dt>Rete richiesta</dt>
+              <dd>Nessuna in ripresa ed export</dd>
+            </div>
+            <div>
+              <dt>Export</dt>
+              <dd>MP4 1080p pulito in Galleria</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero-media">
+          <button type="button" class="image-trigger" data-lightbox-src="assets/01-hero-dakkapo.png" data-lightbox-caption="Registrazione verticale 9:16 con smartphone Android e ricevitore microfono USB-C.">
+            <img src="assets/01-hero-dakkapo.png" alt="Registrazione di un video verticale 9:16 con smartphone Android su treppiede e microfono esterno USB-C" width="1600" height="900">
+          </button>
+        </figure>
+      </div>
+    </section>
+
+    <section class="problem-strip" aria-label="Flusso operativo">
+      <div class="container">
+        <div class="strip-grid">
+          <article class="strip-item">
+            <span class="step-index">01</span>
+            <h2>Importa o scrivi lo script</h2>
+            <p>Apri un file <code>.txt</code> o <code>.md</code>, oppure scrivi il testo direttamente in app: resta salvato in locale sul dispositivo.</p>
+          </article>
+          <article class="strip-item">
+            <span class="step-index">02</span>
+            <h2>Parla guardando la lente</h2>
+            <p>Il testo sta sotto la fotocamera frontale e avanza con il riconoscimento vocale italiano offline, fermandosi quando fai una pausa.</p>
+          </article>
+          <article class="strip-item">
+            <span class="step-index">03</span>
+            <h2>Taglia e rigira in timeline</h2>
+            <p>Dopo lo stop entri subito nel montaggio: rimuovi silenzi ed errori o premi <em>Registra qui</em> per riprendere dalla parola del taglio.</p>
+          </article>
+          <article class="strip-item">
+            <span class="step-index">04</span>
+            <h2>Esporta un MP4 pulito</h2>
+            <p>In Galleria finisce solo il montato finale in <code>Movies/dakkapo/</code>, senza testo in sovrimpressione e con audio sincronizzato.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="funzioni" class="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Cosa fa l'app</span>
+          <h2>Quattro schermate per passare dallo script al video montato.</h2>
+          <p>Ogni passaggio gira in locale sul telefono; clicca su una qualsiasi immagine per aprirla a schermo intero.</p>
+        </div>
+
+        <div class="feature-list">
+          <article class="feature-row">
+            <div class="feature-copy">
+              <span class="feature-tag">01 · Registrazione e voice tracking</span>
+              <h3>Il testo segue la voce sotto la lente, con il tuo microfono.</h3>
+              <p>
+                Durante la ripresa 9:16 lo script rimane posizionato subito sotto la fotocamera frontale e l'evidenziazione avanza parola per parola grazie al modello italiano <strong>Vosk</strong> integrato nell'APK, con latenza compresa tra 100 e 300 ms. Quando ti fermi o vai a braccio lo scorrimento si arresta; quando riprendi il testo ti riaggancia in automatico, tollerando anche singole parole inglesi nel discorso italiano.
+              </p>
+              <ul class="feature-points">
+                <li>Supporto nativo a microfono interno, ricevitore <strong>DJI USB-C</strong> (48 kHz stereo con downmix mono verso il riconoscimento vocale) e microfoni <strong>Bluetooth</strong>;</li>
+                <li>VU-meter live prima e durante la registrazione per verificare il segnale prima di premere REC;</li>
+                <li>Regolazione di dimensione testo, larghezza, opacità, linea di lettura, countdown e modalità di ripiego a velocità fissa.</li>
+              </ul>
+            </div>
+            <figure class="feature-media">
+              <button type="button" class="image-trigger" data-lightbox-src="assets/02-teleprompter-voice-tracking.png" data-lightbox-caption="Registrazione 9:16 con script sotto la lente, parola evidenziata, badge DJI USB-C e VU-meter live.">
+                <img src="assets/02-teleprompter-voice-tracking.png" alt="Schermata di registrazione di dakkapo con teleprompter voice tracking sotto la lente, badge DJI USB-C e VU-meter live" width="1920" height="1080" loading="lazy">
+              </button>
+            </figure>
+          </article>
+
+          <article class="feature-row feature-row-reverse">
+            <div class="feature-copy">
+              <span class="feature-tag">02 · Timeline libera dopo STOP</span>
+              <h3>Apri la timeline appena fermi la ripresa, con lo script legato ai secondi.</h3>
+              <p>
+                Le clip grezze restano nella cartella interna del progetto e lasciano pulita la Galleria. Subito dopo lo stop entri nella timeline: mentre scorri la testina vedi insieme anteprima video 9:16, filmstrip dei fotogrammi, forma d'onda audio campionata a 20 Hz durante la ripresa e le due righe dello script sincronizzate a quel preciso istante.
+              </p>
+              <ul class="feature-points">
+                <li>Taglio non distruttivo con <strong>Dividi</strong>, rifinitura sui bordi con <strong>Trim</strong> ed eliminazione con chiusura magnetica dei vuoti;</li>
+                <li>Tocco diretto su una parola nella striscia script per spostare subito la testina sul secondo corrispondente;</li>
+                <li>Zoom da <code>0.5x</code> a <code>4x</code> con pulsanti o pinch a due dita, più cronologia <strong>Undo / Redo</strong> fino a 30 passaggi.</li>
+              </ul>
+            </div>
+            <figure class="feature-media">
+              <button type="button" class="image-trigger" data-lightbox-src="assets/03-timeline-capcut.png" data-lightbox-caption="Timeline libera stile CapCut con preview 9:16, striscia script sincronizzata, waveform 20 Hz e filmstrip.">
+                <img src="assets/03-timeline-capcut.png" alt="Schermata Timeline di dakkapo con preview video 9:16, striscia script sincronizzata, waveform audio e controlli Dividi, Elimina e Registra qui" width="1920" height="1080" loading="lazy">
+              </button>
+            </figure>
+          </article>
+
+          <article class="feature-row">
+            <div class="feature-copy">
+              <span class="feature-tag">03 · Auto-taglio silenzi e Punch-in</span>
+              <h3>Pulisci i silenzi in un tocco e rigira solo il passaggio da rifare.</h3>
+              <p>
+                Il rilevatore di silenzi analizza la forma d'onda già raccolta in ripresa, mostra in anteprima i tagli proposti con soglia e durata regolabili e li rimuove con un tocco reversibile tramite Undo. Se invece hai inciampato su una frase, selezioni la clip o il taglio e premi <strong>Registra qui</strong>: la fotocamera si riapre con il teleprompter fermo sulla parola esatta di quel punto.
+              </p>
+              <ul class="feature-points">
+                <li>Su una clip selezionata, <strong>Registra qui</strong> sostituisce quella clip per default, con selettore rapido per passare a <em>Inserisci al taglio</em>;</li>
+                <li>Su un taglio o a fine timeline, il nuovo take si incastra direttamente nella posizione della testina;</li>
+                <li>Nessuna ricerca manuale nello script: la mappa <code>ms → parola</code> viene registrata mentre parli.</li>
+              </ul>
+            </div>
+            <figure class="feature-media">
+              <button type="button" class="image-trigger" data-lightbox-src="assets/04-silenzi-e-punch-in.png" data-lightbox-caption="Auto-taglio silenzi 1-tap con anteprima e Undo, più rientro in camera Registra qui agganciato alla parola del taglio.">
+                <img src="assets/04-silenzi-e-punch-in.png" alt="Vista affiancata del taglio automatico silenzi e del punch-in Registra qui agganciato allo script in dakkapo" width="1920" height="1080" loading="lazy">
+              </button>
+            </figure>
+          </article>
+
+          <article class="feature-row feature-row-reverse">
+            <div class="feature-copy">
+              <span class="feature-tag">04 · Offline, lip-sync e aggiornamenti</span>
+              <h3>Export MP4 senza testo in sovrimpressione, zero account e aggiornamenti verificati.</h3>
+              <p>
+                Il teleprompter è disegnato sul livello Compose sopra l'anteprima, mentre la codifica passa direttamente da <code>CameraX</code> e da un singolo <code>AudioRecord</code> sdoppiato verso <code>MediaCodec</code> e un unico <code>MediaMuxer</code>. Quando premi <strong>Esporta</strong>, <code>Media3 Transformer</code> cuce le clip con accelerazione hardware e salva un file MP4 9:16 pulito dentro <code>Movies/dakkapo/</code>.
+              </p>
+              <ul class="feature-points">
+                <li>Sincronia audio/video ancorata al clock hardware della fotocamera, con scarto contenuto sotto i <strong>30 ms</strong> anche su riprese da 10–15 minuti;</li>
+                <li>Funzionamento integrale sul dispositivo: nessun caricamento su cloud, nessuna registrazione utente, nessun abbonamento;</li>
+                <li>Controllo aggiornamenti in-app collegato alle release pubbliche su GitHub con verifica <strong>SHA-256</strong> prima dell'installazione.</li>
+              </ul>
+            </div>
+            <figure class="feature-media">
+              <button type="button" class="image-trigger" data-lightbox-src="assets/05-offline-export-pulito.png" data-lightbox-caption="Export MP4 9:16 pulito in Movies/dakkapo/ e pilastri tecnici offline dell'app.">
+                <img src="assets/05-offline-export-pulito.png" alt="Esportazione MP4 pulita di dakkapo in Movies/dakkapo/ con riepilogo delle specifiche offline, lip-sync e verifica SHA-256" width="1920" height="1080" loading="lazy">
+              </button>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="specifiche" class="specs">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Specifiche tecniche</span>
+          <h2>Che cosa c'è sotto l'interfaccia.</h2>
+          <p>Scelte progettuali su codebase Kotlin nativa, eseguite interamente in locale durante la ripresa e il montaggio.</p>
+        </div>
+
+        <div class="specs-grid">
+          <article class="spec-card">
+            <h3>Video e orientamento</h3>
+            <p>Registrazione verticale <strong>9:16</strong>, profilo predefinito <strong>1080p @ 30 fps</strong> (H.264 + AAC) via <code>CameraX</code> con <code>VideoOutput</code> dedicato.</p>
+          </article>
+          <article class="spec-card">
+            <h3>Lip-sync hardware</h3>
+            <p>Singolo <code>AudioRecord</code> sdoppiato e unico <code>MediaMuxer</code> sincronizzato al clock sensore: offset e deriva sotto i <strong>30 ms</strong>.</p>
+          </article>
+          <article class="spec-card">
+            <h3>Riconoscimento vocale</h3>
+            <p>Motore <strong>Vosk</strong> (<code>vosk-model-small-it-0.22</code>) incluso nell'APK, streaming <strong>100–300 ms</strong> e allineamento fuzzy con finestra scorrevole.</p>
+          </article>
+          <article class="spec-card">
+            <h3>Sorgenti audio</h3>
+            <p>Selettore con hot-plug per microfono interno, ricevitore <strong>DJI USB-C</strong> (48 kHz stereo con downmix L+R→mono verso STT) e <strong>Bluetooth</strong>.</p>
+          </article>
+          <article class="spec-card">
+            <h3>Editing ed export</h3>
+            <p><code>Media3 ExoPlayer</code> per preview istantanea delle clip tagliate e <code>Media3 Transformer</code> per export finale in <code>Movies/dakkapo/</code>.</p>
+          </article>
+          <article class="spec-card">
+            <h3>Distribuzione</h3>
+            <p>APK release firmato pubblicato su GitHub Releases; self-updater integrato che verifica hash <strong>SHA-256</strong> e host prima di aprire l'installer Android.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="aggiornamenti" class="changelog">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Release e aggiornamenti</span>
+          <h2>Storico versioni aggiornato da GitHub Releases.</h2>
+          <p>Ogni nuova versione pubblicata su <code>emanuelegurini/dakkapo-releases</code> compare qui in automatico con data, peso APK e note di rilascio.</p>
+        </div>
+
+        <div class="release-list" id="release-list">
+          <article class="release-card">
+            <div class="release-card-head">
+              <div class="release-title-group">
+                <span class="release-tag">v0.2.0</span>
+                <span class="release-badge">Ultima</span>
+                <time class="release-date" datetime="2026-11-25">25 nov 2026</time>
+              </div>
+              <a class="release-dl" href="https://github.com/emanuelegurini/dakkapo-releases/releases/tag/v0.2.0" target="_blank" rel="noopener noreferrer">Scarica APK · 101 MB</a>
+            </div>
+            <ul class="release-notes">
+              <li>Prima release firmata con teleprompter offline Vosk IT, timeline libera stile CapCut (Dividi, Trim, Elimina, Undo, auto-taglio silenzi 1-tap, zoom 0.5x–4x, filmstrip), punch-in <em>Registra qui</em> e self-updater SHA-256.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="installazione" class="install">
+      <div class="container">
+        <div class="install-box">
+          <div class="install-copy">
+            <span class="eyebrow">Download diretto</span>
+            <h2>Installa dakkapo su Android in tre passaggi.</h2>
+            <p>
+              L'app è distribuita direttamente come APK firmato su GitHub Releases, fuori dal Play Store. Dopo la prima installazione, gli aggiornamenti successivi vengono segnalati direttamente dentro l'app.
+            </p>
+            <div class="install-actions">
+              <a class="btn btn-primary" data-download-link href="https://github.com/emanuelegurini/dakkapo-releases/releases/tag/v0.2.0" target="_blank" rel="noopener noreferrer">
+                <span data-download-text>Scarica APK (v0.2.0)</span>
+              </a>
+              <a class="btn btn-secondary" href="https://github.com/emanuelegurini/dakkapo-releases/releases" target="_blank" rel="noopener noreferrer">
+                Tutte le release e checksum
+              </a>
+            </div>
+            <div class="adb-snippet">
+              <code>adb install -r dakkapo-<span data-version-raw>v0.2.0</span>.apk</code>
+              <button type="button" class="copy-btn" data-copy-adb>Copia comando adb</button>
+            </div>
+          </div>
+
+          <ol class="install-steps">
+            <li>
+              <strong>Scarica il file APK dal telefono</strong>
+              <span>Usa il pulsante qui accanto per aprire l'ultima release su GitHub e scaricare <code>dakkapo-<span data-version-raw>v0.2.0</span>.apk</code>.</span>
+            </li>
+            <li>
+              <strong>Consenti l'installazione da questa origine</strong>
+              <span>Apri il file scaricato; se Android mostra l'avviso sulle app sconosciute, abilita l'installazione per il browser o il file manager usato.</span>
+            </li>
+            <li>
+              <strong>Concedi Fotocamera e Microfono al primo avvio</strong>
+              <span>L'app usa questi permessi solo in locale durante la ripresa; nessun dato esce dal dispositivo.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/dakkapo-mark.svg" alt="" width="24" height="20">
+        <span><strong>dakkapo</strong> · Sviluppata da Emanuele Gurini</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/emanuelegurini/dakkapo-releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a>
+        <span class="sep" aria-hidden="true">·</span>
+        <span data-release-footer>Release v0.2.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Anteprima immagine">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Chiudi anteprima">Chiudi ✕</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

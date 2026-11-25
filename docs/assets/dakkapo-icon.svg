@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" fill="none">
+  <defs>
+    <linearGradient id="dakkapoIconGrad" x1="54" y1="32.6" x2="54" y2="75.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5A5A5E"/>
+      <stop offset="25%" stop-color="#525256"/>
+      <stop offset="100%" stop-color="#171719"/>
+    </linearGradient>
+  </defs>
+  <rect width="108" height="108" rx="24" fill="#070708"/>
+  <path d="M27.5,52.6 A20,20 0 0,1 67.5,52.6 Z M80.5,55.4 A20,20 0 0,1 40.5,55.4 Z" fill="url(#dakkapoIconGrad)"/>
+</svg>
